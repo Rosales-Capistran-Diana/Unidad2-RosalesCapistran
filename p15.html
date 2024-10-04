@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blueviolet; font-weight: 300; text-align: center; font-size: 50px; ">Diferencias entre 20px, 2em, 3rem</h1>
+<ul>
+    <li style="color: rgb(94, 117, 194); font-weight: 1000; font-size: 30px;"><a href="diferencias"></a> 20 px</li>
+    
+    <p style="color: rgb(75, 81, 102); font-size: 25px; "> - Su valor es fijo y no cambia en función de otros elementos o configuraciones del usuario.</p>
+    <p style="color: rgb(75, 81, 102); font-size: 25px; "> - Normalmente se utiliza para elementos gráficos, espaciados pequeños o cuando se necesita un control muy preciso sobre el tamaño.</p>
+    <p style="color: rgb(75, 81, 102); font-size: 25px; "> - No es muy flexible para diseños responsivos, ya que el tamaño no se adapta a diferentes resoluciones de pantalla.</p>
+    <ul></ul>
+        <h4 style="color: rgb(105, 35, 88); font-size: 25px;">Ventajas:</h4>
+        <li style="color: rgb(58, 22, 49); font-size: 25px;">Precisión: Ofrece un control muy preciso sobre el tamaño y el espaciado de los elementos.</li>
+        <li  style="color: rgb(58, 22, 49); font-size: 25px;">Sencillez: Es fácil de entender y utilizar, ya que representa un punto físico en la pantalla.</li>
+        <li  style="color: rgb(58, 22, 49); font-size: 25px;">Perfecto para elementos gráficos: Ideal para imágenes, iconos y otros elementos que requieran un tamaño fijo.</li>
+    </ul>
+    <br><br>
+    <li style="color: rgb(173, 31, 138); font-weight: 1000; font-size: 30px; "><a href="diferencias"></a> 2em</li>
+    <p style="color: rgb(105, 35, 88); font-size: 25px;"> - Su valor depende del tamaño de fuente del elemento padre.</p>
+    <p style="color: rgb(105, 35, 88); font-size: 25px;"> - Útil para crear jerarquías tipográficas y mantener relaciones proporcionales entre los tamaños de fuente dentro de un mismo elemento.</p>
+    <p style="color: rgb(105, 35, 88); font-size: 25px;"> - Puede ser difícil de gestionar en diseños complejos, ya que los cambios en el tamaño de fuente de un elemento pueden afectar a todos sus elementos hijos.</p>
+    <p style="color: rgb(105, 35, 88); font-size: 25px;"> - Un pequeño cambio en el tamaño de fuente de un elemento padre puede causar cambios en cascada en todos sus hijos.</p>
+    <ul>
+        <h4 style="color: rgb(105, 35, 88); font-size: 25px;">Ventajas:</h4>
+        <li style="color:rgb(88, 22, 72); font-size: 25px;">Flexibilidad: Permite crear diseños escalables, donde los elementos se ajustan proporcionalmente al cambiar el tamaño de fuente del elemento padre.</li>
+        <li  style="color: rgb(88, 22, 72); font-size: 25px;">Jerarquías tipográficas: Facilita la creación de jerarquías visuales claras al relacionar el tamaño de los elementos con el tamaño de la fuente del texto.</li>
+        <li  style="color: rgb(88, 22, 72); font-size: 25px;">Adaptabilidad: Se adapta bien a diferentes tamaños de pantalla y preferencias del usuario.</li>
+    </ul>
+
+    <br><br>
+    <li style="color: rgb(156, 76, 202); font-weight: 1000; font-size: 30px;"><a href="diferencias"></a> 3rem</li>
+    <p style="color: rgb(64, 32, 82); font-size: 25px;"> - Similar a "em", pero su valor depende del tamaño de fuente del elemento raíz </p>
+    <p style="color: rgb(64, 32, 82); font-size: 25px;"> - Recomendada para establecer tamaños de fuente base y crear sistemas de diseño responsivos y accesibles.</p>
+    <p style="color: rgb(64, 32, 82); font-size: 25px;"> - Calcular tamaños exactos en rem puede volverse complejo, especialmente cuando se anidan varios elementos y se aplican diferentes factores de escala.</p>
+    <p style="color: rgb(64, 32, 82); font-size: 25px;"> - Es una herramienta poderosa para crear diseños escalables y responsivos, pero no es perfecta. Al comprender sus limitaciones y utilizarla de manera adecuada, puedes aprovechar al máximo sus ventajas y evitar problemas comunes.</p>
+    <ul>
+        <h4 style="color: rgb(64, 32, 82); font-size: 25px;">Ventajas:</h4>
+        <li style="color: rgb(37, 15, 49); font-size: 25px;">Escalabilidad global: Permite crear sistemas de diseño escalables y consistentes en toda la página.</li>
+        <li  style="color: rgb(37, 15, 49); font-size: 25px;">Independencia del contexto: El tamaño de los elementos se define en relación al tamaño de fuente del elemento raíz, lo que evita problemas de anidamiento y hace que los cálculos sean más sencillos.</li>
+        <li  style="color: rgb(37, 15, 49); font-size: 25px;">Accesibilidad: Facilita la creación de sitios web accesibles, ya que permite a los usuarios ajustar el tamaño de fuente de forma global sin afectar el diseño.</li>
+    </ul>
+</ul>
+
+<br><br>
+<table border="1">
+    <tr>
+        <caption style="font-size: 30px;"> <b>Otras unidades comunes</b></caption>
+        <th rowspan="1>" style="font-size: 25px; width: 220px;">Unidad</th>
+        <th colspan="3" style="font-size: 25px;">Descripción corta</th>
+    </tr>
+    <tr>
+        <td style="font-size: 25px;">% (porcentaje)</td>
+        <td style="font-size: 25px;">Expresa un tamaño como un porcentaje del tamaño del contenedor padre. Es muy útil para crear diseños flexibles y responsivos.</td>
+    </tr>
+    <tr>
+        <td style="font-size: 25px;">vw (Viewport width)</td>
+        <td style="font-size: 25px;">Representa un porcentaje del ancho de la ventana del navegador. Ideal para crear diseños que se ajusten al tamaño de la pantalla.</td>
+    </tr>
+    <tr>
+        <td style="font-size: 25px;">vh (Viewport height)</td>
+        <td style="font-size: 25px;">Similar a vw, pero representa un porcentaje de la altura de la ventana del navegador.</td>
+    </tr>
+    <tr>
+        <td style="font-size: 25px;">vmin</td>
+        <td style="font-size: 25px;">Toma el valor más pequeño entre vw y vh.</td>
+    </tr>
+    <tr></tr>
+        <td style="font-size: 25px;">vmax</td>
+        <td style="font-size: 25px;">Toma el valor más grande entre vw y vh.</td>
+    </tr>
+    <tr>
+        <td style="font-size: 25px;">ex</td>
+        <td style="font-size: 25px;"> Equivale a la altura de la letra "x" en la fuente actual.</td>
+    </tr>
+</table>
+
+<footer>
+    <br><br>
+    <p style="text-align: right;">2024. Elaborado por Diana Rebeca Rosales Capistrán. </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    header{
+        text-align: center;
+        padding: 2rem 4rem;
+    }
+    
+    nav{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        margin-bottom: 1rem;
+    }
+    #Titulo-supermercado{
+    font-size: 3rem;
+    font-style: italic;
+    }
+    #menu_cat a{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 0 10px; 
+
+    }   
+    
+    #areas {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    #areas div {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    #areas img {
+        width: 100%;
+        height: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #areas li {
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    #areas a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    #sobre_nosotros{
+        font-size: 1rem;
+        font-family: sans-serif;
+        margin-top: 1.2rem;
+    }
+
+    .variedad_de_productos img {
+        width: 400px;
+        height: auto;
+    }
+
+    .variedad_de_productos {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .variedad_de_productos h3 {
+        font-size: 1.2rem;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .variedad_de_productos p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: Arial, sans-serif;
+        margin-top: 1rem;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+        justify-content: space-around;
+    }
+    #img1:nth-child(1){
+    grid-row: 1/2; 
+    grid-column: 1/3;
+    }
+    #img2:nth-child(2){
+    grid-row: 1/2; 
+    grid-column: 3/4;
+    }
+    #img3:nth-child(3){  
+    grid-row: 2/3; 
+    grid-column: 2/4;
+    }
+    #img4:nth-child(4){
+    grid-row: 2/3; 
+    grid-column: 1/2;
+    }
+    #img5:nth-child(5){
+    grid-row: 3/4; 
+    grid-column: 1/3;
+    }
+    #img6:nth-child(6){
+    grid-row: 3/4; 
+    grid-column: 3/4;
+    }
+    
+    .variedad {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .variedad img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem; 
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: hsl(300, 10%, 70%);
+    }
+    footer ul{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+    }
+    
+
+
+    @media(max-width: 768px) {
+    body{
+    background-color: black;
+    color: blanchedalmond;
+    }
+    header{
+        text-align: center;
+        padding: 2rem 4rem;
+    }
+    
+    nav{
+        border-bottom: 1px solid rgb(239, 178, 252);
+        margin-bottom: 1rem;
+    }
+    #Titulo-supermercado{
+    font-size: 3rem;
+    font-style: italic;
+    }
+    #menu_cat a{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: rgb(255, 159, 242);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 10px; 
+        flex-direction: row;
+        justify-content: space-around;
+
+    }   
+    
+    #areas {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    #areas div {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    #areas img {
+        width: 100%;
+        height: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #areas li {
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    #areas a {
+        text-decoration: none;
+        font-weight: bold;
+        color:rgb(239, 178, 252);
+    }
+    
+    #sobre_nosotros{
+        font-size: 1rem;
+        font-family: sans-serif;
+        margin-top: 1.2rem;
+    }
+
+    .variedad_de_productos img {
+        width: 400px;
+        height: auto;
+    }
+
+    .variedad_de_productos {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .variedad_de_productos h3 {
+        font-size: 1.2rem;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .variedad_de_productos p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: Arial, sans-serif;
+        margin-top: 1rem;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        justify-content: space-around;
+    }
+    #img1:nth-child(1){
+    grid-row: 1/2; 
+    grid-column: 1/2;
+    }
+    #img2:nth-child(2){
+    grid-row: 1/2; 
+    grid-column: 2/3;
+    }
+    #img3:nth-child(3){  
+    grid-row: 2/3; 
+    grid-column: 1/2;
+    }
+    #img4:nth-child(4){
+    grid-row: 2/3; 
+    grid-column: 2/3;
+    }
+    #img5:nth-child(5){
+    grid-row: 3/4; 
+    grid-column: 1/2;
+    }
+    #img6:nth-child(6){
+    grid-row: 3/4; 
+    grid-column: 2/3;
+    }
+    
+    .variedad {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .variedad img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem; 
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(107, 23, 126);
+    }
+    footer ul{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+    footer a{
+        color: azure;
+    }
+
+    @media(max-width: 480px) {
+    body{
+    background-color: rgb(34, 1, 43);
+    color: blanchedalmond;
+    }
+
+    header{
+        text-align: center;
+        padding: 2rem 4rem;
+    }
+    
+    nav{
+        border-bottom: 1px solid rgb(255, 159, 242);
+        margin-bottom: 1rem;
+    }
+    #Titulo-supermercado{
+    font-size: 2.3rem;
+    font-style: italic;
+    }
+    #menu_cat a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: rgb(126, 102, 123);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 10px; 
+        flex-direction: row;
+        justify-content: space-around;
+
+    }   
+    
+    #areas {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    #areas div {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    #areas img {
+        width: 100%;
+        height: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #areas li {
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    #areas a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #bd95c2;
+    }
+    
+    #sobre_nosotros{
+        font-size: 1rem;
+        font-family: sans-serif;
+        margin-top: 1.2rem;
+    }
+
+    .variedad_de_productos img {
+        width: 400px;
+        height: auto;
+    }
+
+    .variedad_de_productos {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .variedad_de_productos h3 {
+        font-size: 1.2rem;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .variedad_de_productos p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: Arial, sans-serif;
+        margin-top: 1rem;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+        justify-content: space-around;
+    }
+    #img1:nth-child(1){
+    grid-row: 1/2; 
+    grid-column: 1/2;
+    }
+    #img2:nth-child(2){
+    grid-row: 2/3; 
+    grid-column: 1/2;
+    }
+    #img3:nth-child(3){  
+    grid-row: 3/4; 
+    grid-column: 1/2;
+    }
+    #img4:nth-child(4){
+    grid-row: 4/5; 
+    grid-column: 1/2;
+    }
+    #img5:nth-child(5){
+    grid-row: 5/6; 
+    grid-column: 1/2;
+    }
+    #img6:nth-child(6){
+    grid-row: 6/7; 
+    grid-column: 1/2;
+    }
+    
+    .variedad {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .variedad img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem; 
+        flex-direction: row;
+        justify-content: space-around;
+        color: blanchedalmond;
+        background-color: hsl(300, 8%, 20%);
+    }
+    footer ul{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        footer a{
+        color: azure;
+    }
+
+        }
+</style>
+
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;" id="Titulo-supermercado">Supermercado.</h1>
+        <div>
+        <nav id="menu_cat" style="text-align: center;">
+            <a href="index.html">Inicio |</a>
+            <a href="nosotros.html">Nosotros |</a>
+            <a href="blog.html">Blog |</a>
+            <a href="galeria.html">Galería |</a>
+            <a href="contacto.html">Contacto |</a>
+        
+        </nav>
+    </div>
+    </header>
+
+    <h2 style="text-align: center;" id="titulo-areas-de-supermercado">Áreas dentro del Supermercado</h2>
+    <section id="areas">
+        
+        <div>
+            <img src="img/congelados.png" alt="Fotografía para referenciar a los productos del área de congelados">
+            <li><a href="#">Alimentos congelados</a></li>
+        </div> 
+    
+        <div>
+            <img src="img/snacks.png" alt="Fotografía para referenciar a los productos del área snacks">
+            <li><a href="#">Snacks</a></li> 
+        </div>
+    
+        <div>
+            <img src="img/desechables.png" alt="Fotografía para referenciar a los productos del área de desechables">
+            <li><a href="#">Desechables</a></li>
+        </div>     
+    </section>
+    
+
+    <h2 style="text-align: center;" id="titulo-nuestros-productos">Nuestros productos:</h2> 
+    <main>
+        <div style="text-align: center;" class="variedad de productos" id="img1">
+        <img src="img/fresas.jpg" alt="Frutas congeladas">
+        <h3>Fresas congeladas</h3>
+        <p>Nuestro Supermercado cuenta con su área de congelados, y en toda área de ellos, no pueden faltar las frutas congeladas, ideales para unas fresas con crema, licuados de fresa o para lo que sea de su preferencia.</p>
+        <p>Costo por caja: $29.90</p>
+        <input type="submit" value="Añadir al carrito">
+        
+        </div>
+
+        <div id="img1" class="variedad de productos" style="text-align: center;" >
+        <br><br>
+        <img src="img/verduras.jpg" alt="Verduras congeladas">
+        <h3>Verduras congeladas</h3>
+        <p>Nos preocupamos por que coma saludable, por ello, no pueden faltar unas ricas verduras al vapor</p>        
+        <p>Costo por bolsa: $35.90</p>
+        <input type="submit" value="Añadir al carrito">
+        </div>
+        
+        <div class="variedad de productos" style="text-align: center;" id="img3">
+        <br><br>
+        <img src="img/tostitos.jpg" alt="Papas marca Tostitos color verdes.">
+        <h3>Papas marca Tostitos</h3>
+        <p>No te quedes con el antojo de unas papas, ¡variedad de tostitos en promocón!</p>
+        <p>Costo por bolsa: $32.90</p>
+        <input type="submit" value="Añadir al carrito">
+        </div>
+
+        <div class="variedad de productos" style="text-align: center;" id="img4">
+        <br><br>
+        <img src="img/chips.jpg" alt="Variedad de papas marca chips">
+        <h3>Papas marca chips</h3>
+        <p>Porque sabemos que el fin de semana está cerca, llévate la promoción de 2x1 en la variedad de chips, combínalas como quieras.</p>
+        <p>Costo en promoción: $63.90</p>
+        <input type="submit" value="Añadir al carrito">
+        </div>
+
+        <div class="variedad de productos" style="text-align: center;" id="img5">
+        <br><br>
+        <img src="img/servilletas.jpg" alt="Variedad de marcas de servilletas de papel">
+        <h3>Servilletas de papel.</h3>
+        <p>Es la semana de los desechables, aprovecha variedad de servilletas de papel en super promoción en todas las marcas.</p>
+        <p>Costos a partir de: $19.90</p>
+        <input type="submit" value="Añadir al carrito">
+        </div>
+
+        <div class="variedad de productos" style="text-align: center;" id="img6">
+        <br><br>
+        <img src="img/vasos.jpg" alt="Vasos desechables">
+        <h3>Vasos ecológicos</h3>
+        <p>Los vasos desechables son indispensables, pero, ¿qué tal aquellos que no contaminan al ambiente? </p>
+        <p>Costo por bolsa: $39.90</p>
+        <input type="submit" value="Añadir al carrito">
+        </div>
+    </main>
+
+    
+    <section  id="sobre_nosotros ">
+        <h2 style="text-align: center; font-style: italic" id="titulo-sobre-nosotros">Sobre nosotros...</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores commodi reprehenderit nesciunt minima obcaecati nam suscipit deleniti blanditiis maiores repudiandae, consequatur, nulla laborum atque quod molestiae eum unde vero perferendis itaque nemo. Quibusdam, velit illo omnis reiciendis distinctio esse tenetur laboriosam quidem eaque possimus alias, necessitatibus dolorem recusandae numquam accusamus dolor sequi at soluta iste. Architecto molestias voluptates, veritatis asperiores corrupti perferendis sit cumque veniam omnis sed vero doloribus odio, recusandae itaque consequatur. Delectus amet a aliquid sit veniam vel deserunt soluta at repellendus, itaque mollitia illo explicabo. Harum asperiores quod, fugit laudantium beatae recusandae voluptatum voluptatibus deleniti iusto ratione accusamus dignissimos, minus sit vel doloremque ipsa explicabo esse aut placeat ut corrupti. Facere nostrum quidem quod commodi distinctio aliquid veritatis cum quibusdam cumque, autem reiciendis rerum, in ut rem dolorem. Officia cumque consequuntur provident ducimus at saepe mollitia, omnis vero corporis, exercitationem veniam atque placeat iure, ad quasi laudantium harum? Inventore sequi natus, eligendi ratione perferendis assumenda perspiciatis temporibus laboriosam odit tenetur. Quisquam veniam vel quam perspiciatis alias temporibus, possimus minus nihil maiores fugit doloribus repellendus autem sunt deleniti aperiam accusamus quod nam incidunt obcaecati laborum! Itaque temporibus, ab voluptatem, in, nesciunt libero quaerat hic illum quam incidunt optio!</p>
+    </section>
+
+    <br>
+    <footer >
+        
+        <div > 
+            <h4 >Categorías adicionales</h4>
+            <ul  class="footer-menu-categorias">
+                <a href="#">Frutas y verduras.</a>
+                <a href="#">Enlatados.</a>
+                <a href="#">Sopas.</a>
+                <a href="#">Salchichonería.</a>
+                <a href="#">Dulcería.</a>
+                <a href="#">Cereales y galletas.</a>
+                <a href="#">Jugos y refrescos.</a>
+                <a href="#">Artículos de limpieza.</a>
+            </ul>
+        </div>
+        <div>
+            <h4 >Información sobre la Tienda</h4>
+            <ul  class="footer-menu-informacion">
+                <a href="#">Nuestra tienda</a></li>
+                <a href="#">Misión, Visión y Valores</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Términos del servicio</a>
+            </ul>
+        </div>
+        <div>
+            <h4>Soporte</h4>
+            <ul class="footer-menu-soporte">
+                <a href="#">Preguntas frecuentes.</a>
+                <a href="#">Ayuda en línea.</a>
+                <a href="#">Confianza y seguridad.</a>
+            </ul>
+        </div>
+
+    </footer>
+
+    <footer>
+        <p>2024. Todos los derechos se encuentran reservados para nuestro Supermercado </p>
+    </footer>
+    </header>
+</body>
+</html>

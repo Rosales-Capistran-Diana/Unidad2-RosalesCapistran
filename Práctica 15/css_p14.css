@@ -63,7 +63,7 @@ body{
     grid-row: 3/5;
   }
 div:hover{
-  background-color: rgb(185, 112, 253);
+  background-color: rgb(210, 149, 245);
 }
 
     @media (max-width: 768px) {
